@@ -1,0 +1,18 @@
+title: |
+  Checkout to "another-branch"
+description: |
+  Perform checkout with `git checkout another-branch`, run `git st` and `git l`
+text: |
+  Checkout to "another-branch" with "git checkout <branch-name>" command
+  Check git log
+hint: |
+  git checkout another-branch
+  git l
+result: |
+  git b:
+    * another-branch ecc8678 add file2.txt
+      master         0612e4a master: added "third line"
+
+  git l:
+    (HEAD -> another-branch) add file2.txt
+    add file1.txt

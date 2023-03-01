@@ -1,0 +1,16 @@
+title: |
+  Merge "another-branch-merge-copy" into "master-merge-copy"
+description: |
+  Run `git checkout -b master-merge-copy master`
+  Run `git merge --no-ff another-branch-merge-copy`
+text: |
+  Use "git checkout" and "git reset --hard" to reset "master-merge-copy" to "master"
+  Use "git merge --no-ff" to merge "another-branch-merge-copy" into "master-merge-copy"
+hint: |
+  git checkout master-merge-copy
+  git reset --hard master
+  git merge --no-ff another-branch-merge-copy
+result: |
+  Merge made by the 'recursive' strategy.
+  file1.txt | 5 +++--
+  1 file changed, 3 insertions(+), 2 deletions(-)

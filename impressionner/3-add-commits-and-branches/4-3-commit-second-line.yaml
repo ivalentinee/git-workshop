@@ -1,0 +1,14 @@
+title: |
+  Add and commit second line
+description: |
+  Commit changes as `master: added "second line"`
+text: |
+  Add file1.txt to git stage and commit as 'master: added "second line"'
+hint: |
+  git add file1.txt
+  git commit -m 'master: added "second line"'
+result: |
+  git l:
+    (HEAD -> master) master: added "second line"
+    (another-branch) add file2.txt
+    add file1.txt

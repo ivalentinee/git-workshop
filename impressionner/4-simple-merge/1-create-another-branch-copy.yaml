@@ -1,0 +1,21 @@
+title: |
+  Create "another-branch" copy
+description: |
+  Create a branch for merge experiments by
+  `git checkout -b another-branch-merge-copy another-branch`
+  explain `git checkout -b`
+  run `git branch`
+text: |
+  Create "another-branch" copy named "another-branch-merge-copy" for experiments with "git checkout -b <dst-branch> <src-branch>"
+  Check git branches
+hint: |
+  git checkout -b another-branch-merge-copy another-branch
+  git branch
+result: |
+  git checkout -b ...:
+    Switched to a new branch 'another-branch-merge-copy'
+
+  git branch:
+      another-branch
+    * another-branch-merge-copy
+      master

@@ -1,0 +1,44 @@
+title: |
+  Inspect and resolve conflicts
+description: |
+  Look at conflicts with `git st` and `git diff`, explain about dynamic git diffs
+  Resolve conflicts like this:
+    second line
+    second line part 2
+    third line
+    third line part 2
+text: |
+  Check git status, look at git diff, resolve conflicts including all the lines like this:
+    second line
+    second line part 2
+    third line
+    third line part 2
+hint: |
+  git st
+
+  git diff
+
+  echo 'first line
+  second line
+  second line part 2
+  third line
+  third line part 2' > file1.txt
+result: |
+  git st:
+    ## another-branch-merge-copy
+    UU file1.txt
+
+  git diff:
+    diff --cc file1.txt
+    index 0a9f55c,20aeba2..0000000
+    --- a/file1.txt
+    +++ b/file1.txt
+    @@@ -1,3 -1,3 +1,8 @@@
+      first line
+    ++<<<<<<< HEAD
+     +second line part 2
+     +third line part 2
+    ++=======
+    + second line
+    + third line
+    ++>>>>>>> master

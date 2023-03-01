@@ -1,0 +1,8 @@
+title: |
+  Add another file
+description: |
+  Create text file named `file2.txt` with `file 2 first line` as a content
+text: |
+  Create text file named "file2.txt" with "file 2 first line" as a content
+hint: |
+  echo "file 2 first line" > file2.txt

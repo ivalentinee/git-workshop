@@ -1,0 +1,9 @@
+title: |
+  Check git status
+description: |
+  Look at unstaged file with `git st`
+text: |
+  Check git status with "git st"
+result: |
+  ## No commits yet on master
+  ?? file1.txt

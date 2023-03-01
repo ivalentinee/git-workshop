@@ -1,0 +1,31 @@
+title: |
+  Explore commits in "master-merge-copy"
+description: |
+  Run `git show HEAD`, `git show HEAD^`, `git show HEAD^^^`
+  Run `git show HEAD^2`, `git show HEAD^2^^`, `git show HEAD^2^^2` (which goes the second root)
+  Explain why git behaves like that
+text: |
+  Look at
+    Merge commit (HEAD)
+    Previous commit (HEAD^)
+    Pre-pre-previous commit from first parent (HEAD^^^)
+
+    Previous commit from "another-branch-merge-copy" (HEAD^2)
+    "another-branch-merge-copy" "master" merge commit parent 1 (HEAD^2^^)
+    "another-branch-merge-copy" "master" merge commit parent 2 (HEAD^2^^2)
+hint: |
+  git show HEAD
+  git show HEAD^
+  git show HEAD^^^
+
+  git show HEAD^2
+  git show HEAD^2^^
+  git show HEAD^2^^2
+result: |
+  Merge branch 'another-branch-merge-copy' into master-merge-copy
+  master: added "third line"
+  add file2.txt
+
+  another-branch: added "fourth line"
+  another-branch: added "third line part 2"
+  master: added "third line"

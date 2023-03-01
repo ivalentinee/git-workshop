@@ -1,0 +1,21 @@
+title: |
+  Reset "another-branch-merge-copy" to "another-bransh"
+description: |
+  Have a look at latest commit in `another-branch-merge-copy` with `git branch -v -l another-branch-merge-copy`
+  Explain `git reset`
+  Reset `another-branch-merge-copy` to `another-branch` with `git checkout another-branch-merge-copy` and `git reset --hard another-branch`
+  Look at `another-branch-merge-copy` with `git branch -v -l another-branch-merge-copy`
+text: |
+  Have a look at latest commit in "another-branch-merge-copy" with "git branch -v -l <branch>"
+  Reset "another-branch-merge-copy" to "another-branch" with "git checkout" and "git reset --hard"
+hint: |
+  git branch -v -l another-branch-merge-copy
+  git checkout another-branch-merge-copy
+  git reset --hard another-branch
+  git branch -v -l another-branch-merge-copy
+result: |
+  git branch -v -l (1):
+    another-branch-merge-copy 405ee9c another-branch: added "fourth line"
+
+  git branch -v -l (2):
+    * another-branch-merge-copy 799485a another-branch: added "third line part 2"

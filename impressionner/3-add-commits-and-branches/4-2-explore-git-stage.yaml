@@ -1,0 +1,10 @@
+title: |
+  Explore git stage
+description: |
+  Run `git st` and `git diff`, look at diff
+text: |
+  Check git status
+  Check git diff with "git diff"
+hint: |
+  git st
+  git diff

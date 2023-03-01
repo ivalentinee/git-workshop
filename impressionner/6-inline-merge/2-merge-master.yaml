@@ -1,0 +1,19 @@
+title: |
+  Merge "master"
+description: |
+  Merge `master` into `another-branch-merge-copy` by running `git merge master` and inlining all conflicts
+text: |
+  Merge "master" into "another-branch-merge-copy" by running "git merge" and inlining all conflicts like this:
+    first line
+    second line, second line part 2
+    third line, third line part 2
+hint: |
+  git merge master
+
+  echo 'first line
+  second line, second line part 2
+  third line, third line part 2' > file1.txt
+
+  git add file1.txt
+
+  git merge --continue

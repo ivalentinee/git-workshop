@@ -1,0 +1,8 @@
+title: |
+  "refs" and "heads" directories
+description: |
+  Have a look at `.git/refs`, `.git/refs/heads` directories (spoiler: it's empty)
+text: |
+  Have a look at ".git/refs", ".git/refs/heads" directories
+result: |
+  ".git/refs/heads" is empty

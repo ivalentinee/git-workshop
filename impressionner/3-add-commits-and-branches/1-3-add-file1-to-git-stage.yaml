@@ -1,0 +1,13 @@
+title: |
+  Add files to stage
+description: |
+  Run `git add .`, explain why `.` and what `git add` does, have a look at `git st` file
+text: |
+  Add file1.txt to git stage with "git add" command
+  Then have a look at git status
+hint: |
+  git add .
+  git st
+result: |
+  ## No commits yet on master
+  A  file1.txt

@@ -1,0 +1,37 @@
+title: |
+  Look at git graph
+description: |
+  Run `git l`, then run `git l --graph` (`git log --pretty=oneline --graph`)
+text: |
+  Look at git log
+  Look at git log with "--graph" option
+hint: |
+  git l
+  git l --graph
+result: |
+  git l:
+    (HEAD -> master-merge-copy) Merge branch 'another-branch-merge-copy' into master-merge-copy
+    (another-branch-merge-copy) another-branch: added "fourth line"
+    Merge branch 'master' into another-branch-merge-copy
+    (another-branch) another-branch: added "third line part 2"
+    another-branch: added "second line part 2"
+    (master) master: added "third line"
+    master: added "second line"
+    add file2.txt
+    add file1.txt
+
+  git l --graph:
+    *   (HEAD -> master-merge-copy) Merge branch 'another-branch-merge-copy' into master-merge-copy
+    |\
+    | * (another-branch-merge-copy) another-branch: added "fourth line"
+    | *   Merge branch 'master' into another-branch-merge-copy
+    | |\
+    | |/
+    |/|
+    * | (master) master: added "third line"
+    * | master: added "second line"
+    | * (another-branch) another-branch: added "third line part 2"
+    | * another-branch: added "second line part 2"
+    |/
+    * add file2.txt
+    * add file1.txt

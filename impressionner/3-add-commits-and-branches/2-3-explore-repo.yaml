@@ -1,0 +1,21 @@
+title: |
+  Explore git repo
+description: |
+  Run `git l`, have a look at `.git/refs/heads/master` (spoiler: there's latest commit hash in it)
+  Run `git show HEAD` and `git show HEAD^`
+text: |
+  Check git log with "git l"
+  Have a look at ".git/refs/heads/master"
+  Look at commits with "git show" using "HEAD" and "HEAD^" references
+hint: |
+  git l
+  cat .git/refs/heads/master
+  git show HEAD
+  git show HEAD^
+result: |
+  git l:
+    ecc8678478c94f37a259b70438506fe447d80e94 (HEAD -> master) add file2.txt
+    b941d5512814cc06e1ae1dc963469970be08acb0 add file1.txt
+
+  .git/refs/heads/master:
+    ecc8678478c94f37a259b70438506fe447d80e94

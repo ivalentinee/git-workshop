@@ -1,0 +1,14 @@
+title: |
+  Create "master" copy
+description: |
+  Run `git checkout -b master-merge-copy master`
+text: |
+  Use "git checkout -b" to create master copy named "master-merge-copy"
+hint: |
+  git checkout -b master-merge-copy master
+result: |
+  git branch
+      another-branch
+      another-branch-merge-copy
+      master
+    * master-merge-copy

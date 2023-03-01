@@ -1,0 +1,9 @@
+title: |
+  Commit another file
+description: |
+  Commit it as `add file2.txt` with `git commit -m 'add file2.txt'`
+text: |
+  Add new file to git stash and commit it as "add file2.txt" using "git commit -m" command
+hint: |
+  add file2.txt
+  git commit -m "add file2.txt"

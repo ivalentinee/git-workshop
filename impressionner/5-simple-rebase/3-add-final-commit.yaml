@@ -1,0 +1,19 @@
+title: |
+  Add fourth line to "file1.txt"
+description: |
+  Add `fourth line` to `file1.txt`, commit as `another-branch: added "fourth line"`
+text: |
+  Add `fourth line` to `file1.txt`, commit as `another-branch: added "fourth line"`
+hint: |
+  echo 'fourth line' >> file1.txt
+  git add file1.txt
+  git ci -m 'another-branch: added "fourth line"'
+result: |
+  git l:
+    (HEAD -> another-branch-rebase-copy) another-branch: added "fourth line"
+    another-branch: added "third line part 2"
+    another-branch: added "second line part 2"
+    (master) master: added "third line"
+    master: added "second line"
+    add file2.txt
+    add file1.txt

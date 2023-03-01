@@ -1,0 +1,8 @@
+title: |
+  Merge "another-branch-merge-copy" into "master-merge-copy"
+description: |
+  Run `git merge --no-ff another-branch-merge-copy`, explain, what `--no-ff` means, explain no conflicts
+text: |
+  Use "git merge --no-ff" to merge "another-branch-merge-copy" into "master-merge-copy"
+hint: |
+  git merge --no-ff another-branch-merge-copy

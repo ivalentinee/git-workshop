@@ -1,0 +1,10 @@
+title: Set name and email
+description: |
+  Set name and email by
+    `git config --global --set user.name`
+    `git config --global --set user.email`
+text: |
+  Set name and email using "git config --global --add" with "user.name" and "user.email" config entries
+hint: |
+  git config --global --add user.name <your username>
+  git config --global --add user.email <your email>

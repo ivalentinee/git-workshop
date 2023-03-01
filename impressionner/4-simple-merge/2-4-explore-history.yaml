@@ -1,0 +1,29 @@
+title: |
+  Look at git status, git log and git commits
+description: |
+  Run `git l`, `git show HEAD`, `git show HEAD^`, `git show HEAD^2`, explain two commit parents
+text: |
+  Look at
+    Git status
+    Git log
+    Current commit (HEAD)
+    Previous commit (HEAD^)
+    Previous commit from master (HEAD^2)
+hint: |
+  git st
+  git l
+  git show HEAD
+  git show HEAD^
+  git show HEAD^2
+result: |
+  git st:
+    ## another-branch-merge-copy
+
+  git l:
+    (HEAD -> another-branch-merge-copy) Merge branch 'master' into another-branch-merge-copy
+    (another-branch) another-branch: added "third line part 2"
+    another-branch: added "second line part 2"
+    (master) master: added "third line"
+    master: added "second line"
+    add file2.txt
+    add file1.txt

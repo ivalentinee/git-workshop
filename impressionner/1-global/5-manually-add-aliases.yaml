@@ -1,0 +1,11 @@
+title: Add aliases
+description: |
+  Add aliases into global gitconfig "[alias]" section for 'l' and 'st'
+text: |
+  Add aliases into global gitconfig "[alias]" section
+    l = log --pretty=oneline
+    st = status -sb
+hint: |
+  [alias]
+    l = log --pretty=oneline
+    st = status -sb

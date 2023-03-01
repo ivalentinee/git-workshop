@@ -1,0 +1,32 @@
+title: |
+  Look at git blame
+description: |
+  Run `git blame file1.txt`, show that per-line blame is preserved
+  Run `git show ddc6b6f7` (`git show HEAD^2^^`)
+  Run `git show fa816669` (`git show HEAD^2^`)
+text: |
+  Run "git blame" pointing to "file1.txt"
+  Look at second and third line commits from blame
+hint: |
+  git blame file1.txt
+  git show ddc6b6f7
+  git show fa816669
+result: |
+  git blame:
+    ^b941d55 first line
+    ddc6b6f7 second line, second line part 2
+    fa816669 third line, third line part 2
+    c7397598 fourth line
+
+  git show ddc6b6f7:
+    another-branch: added "third line part 2"
+     first line
+    -second line
+    +second line, second line part 2
+     third line
+
+  git show fa816669:
+     first line
+     second line, second line part 2
+    -third line
+    +third line, third line part 2

@@ -1,0 +1,13 @@
+title: |
+  Create another branch
+description: |
+  Run `git branch another-branch master`, run `git branch`, look at the new branch
+text: |
+  Create a new branch named "another-branch" with "git branch <branch-name>" command
+  Look at branch list with
+hint: |
+  git branch another-branch master
+  git branch
+result: |
+    another-branch
+  * master

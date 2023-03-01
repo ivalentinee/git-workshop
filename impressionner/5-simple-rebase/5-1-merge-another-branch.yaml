@@ -1,0 +1,8 @@
+title: |
+  Merge "another-branch-rebase-copy" into "master-rebase-copy"
+description: |
+  Run `git merge --no-ff another-branch-rebase-copy`, explain no conflicts
+text: |
+  Use "git merge --no-ff" to merge "another-branch-rebase-copy" into "master-rebase-copy"
+hint: |
+  git merge --no-ff another-branch-rebase-copy

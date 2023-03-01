@@ -1,0 +1,28 @@
+title: |
+  Rebase onto "master"
+description: |
+  Rebase onto `master` by running `git rebase master` and inlining all conflicts
+text: |
+  Rebase onto "master" "git rebase" and inlining conflicts like this:
+    second line, second line part 2
+    third line
+
+    third line, third line part 2
+hint: |
+  git rebase master
+
+  echo 'first line
+  second line, second line part 2
+  third line' > file1.txt
+
+  git add file1.txt
+  git rebase --continue
+
+  echo 'first line
+  second line, second line part 2
+  third line, third line part 2' > file1.txt
+
+  git add file1.txt
+  git rebase --continue
+result: |
+  Applying: another-branch: added "third line part 2"

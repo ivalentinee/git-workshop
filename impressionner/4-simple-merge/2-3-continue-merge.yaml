@@ -1,0 +1,9 @@
+title: |
+  Continue merge
+description: |
+  Run `git add file1.txt` and `git merge --continue`, commit changes
+text: |
+  Add changes to git stage, run "git merge --continue", commit changes
+hint: |
+  git add file1.txt
+  git merge --continue

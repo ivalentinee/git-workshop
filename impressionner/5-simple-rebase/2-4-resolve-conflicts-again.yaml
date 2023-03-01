@@ -1,0 +1,44 @@
+title: |
+  Inspect and resolve conflicts (again)
+description: |
+  Look at conflicts with `git st` and `git diff`
+  Resolve conflicts like this:
+    second line
+    second line part 2
+text: |
+  Check git status, look at git diff, resolve conflicts including all the lines like this:
+    third line
+    third line part 2
+  Continue rebase
+hint: |
+  git st
+
+  git diff
+
+  echo 'first line
+  second line
+  second line part 2
+  third line
+  third line part 2' > file1.txt
+
+  git add file1.txt
+  git rebase --continue
+result: |
+  git st:
+    ## HEAD (no branch)
+    UU file1.txt
+
+  git diff:
+    diff --cc file1.txt
+    index e00ae1a,0a9f55c..0000000
+    --- a/file1.txt
+    +++ b/file1.txt
+    @@@ -1,4 -1,3 +1,8 @@@
+      first line
+     +second line
+      second line part 2
+    ++<<<<<<< HEAD
+     +third line
+    ++=======
+    + third line part 2
+    ++>>>>>>> another-branch: added "third line part 2"

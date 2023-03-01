@@ -1,0 +1,22 @@
+title: |
+  Create "another-branch" copy
+description: |
+  Create a branch for rebase experiments by
+  `git checkout -b another-branch-rebase-copy another-branch`
+  run `git branch`
+text: |
+  Create "another-branch" copy named "another-branch-rebase-copy" for experiments with "git checkout -b"
+  Check git branches
+hint: |
+  git checkout -b another-branch-rebase-copy another-branch
+  git branch
+result: |
+  git checkout -b ...:
+    Switched to a new branch 'another-branch-rebase-copy'
+
+  git branch:
+      another-branch
+      another-branch-merge-copy
+    * another-branch-rebase-copy
+      master
+      master-merge-copy

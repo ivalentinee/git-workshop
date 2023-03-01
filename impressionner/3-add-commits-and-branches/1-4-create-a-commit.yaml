@@ -1,0 +1,8 @@
+title: |
+  Create the first commit
+description: |
+  Run `git commit`, see if `GIT_EDITOR` is set, commit as `add file1.txt`
+text: |
+  Commit added file with "git commit" as "add file1.txt",
+hint: |
+  git commit

@@ -1,0 +1,10 @@
+title: |
+  List branches
+description: |
+  Run `git branch`, see only `master` appearing
+text: |
+  Look at branch list with "git branch" command
+hint: |
+  git branch
+result: |
+  * master

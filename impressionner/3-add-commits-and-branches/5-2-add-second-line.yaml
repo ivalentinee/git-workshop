@@ -1,0 +1,15 @@
+title: |
+  Add and commit second line to file1.txt
+description: |
+  Add second line of `second line part 2` to `file1.txt`, commit it as `another-branch: added "second line part 2"`
+text: |
+  Add second line of "second line part 2" to "file1.txt", commit it as 'another-branch: added "second line part 2"'
+hint: |
+  echo "second line part 2" >> file1.txt
+  git add file1.txt
+  git commit -m 'another-branch: added "second line part 2"'
+result: |
+  git l:
+    (HEAD -> another-branch) another-branch: added "second line part 2"
+    add file2.txt
+    add file1.txt

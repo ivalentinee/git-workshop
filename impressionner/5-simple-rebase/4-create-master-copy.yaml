@@ -1,0 +1,16 @@
+title: |
+  Create "master" copy
+description: |
+  Run `git checkout -b master-rebase-copy master`
+text: |
+  Use "git checkout -b" to create master copy named "master-rebase-copy"
+hint: |
+  git checkout -b master-rebase-copy master
+result: |
+  git branch:
+      another-branch
+      another-branch-merge-copy
+      another-branch-rebase-copy
+      master
+      master-merge-copy
+    * master-rebase-copy

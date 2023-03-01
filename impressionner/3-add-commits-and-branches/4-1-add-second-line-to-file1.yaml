@@ -1,0 +1,21 @@
+title: |
+  Add second line to "file1.txt"
+description: |
+  Add second line of `second line` to `file1.txt`
+text: |
+  Add second line of "second line" to "file1.txt"
+hint: |
+  echo "second line" >> "file1.txt"
+result: |
+  git st:
+    ## master
+    M file1.txt
+
+  git diff:
+    diff --git a/file1.txt b/file1.txt
+    index 08fe272..06fcdd7 100644
+    --- a/file1.txt
+    +++ b/file1.txt
+    @@ -1 +1,2 @@
+     first line
+    +second line

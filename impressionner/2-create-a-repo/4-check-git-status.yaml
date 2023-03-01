@@ -1,0 +1,8 @@
+title: |
+  Check git status
+description: |
+  Run `git st`
+text: |
+  Check git status with "git st" command
+result: |
+  ## No commits yet on master

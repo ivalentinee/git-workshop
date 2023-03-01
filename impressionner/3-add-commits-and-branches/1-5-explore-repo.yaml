@@ -1,0 +1,21 @@
+title: |
+  Explore git repo
+description: |
+  Run `git st`, `git l`, have a look at `.git/refs/heads/master` (spoiler: there's commit hash in it)
+text: |
+  Check git status
+  Check git log with "git l"
+  Have a look at ".git/refs/heads/master"
+hint: |
+  git st
+  git l
+  cat .git/refs/heads/master
+result: |
+  git st:
+    ## master
+
+  git l:
+    b941d5512814cc06e1ae1dc963469970be08acb0 (HEAD -> master) add file1.txt
+
+  .git/refs/heads/master:
+    b941d5512814cc06e1ae1dc963469970be08acb0

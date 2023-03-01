@@ -1,0 +1,26 @@
+title: |
+  Look at git blame
+description: |
+  Run `git blame file1.txt`, show that per-line blame is *not* preserved
+  Run `git show 63f544d4` (`git show HEAD^2^`)
+text: |
+  Run "git blame" pointing to "file1.txt"
+  Look at second and third lines commit from blame
+hint: |
+  git blame file1.txt
+  git show 63f544d4
+result: |
+  git blame:
+    ^b941d55 first line
+    63f544d4 second line, second line part 2
+    63f544d4 third line, third line part 2
+    a3d4b537 fourth line
+
+  git show:
+    Merge branch 'master' into another-branch-merge-copy
+    - second line part 2
+    - third line part 2
+     -second line
+     -third line
+    ++second line, second line part 2
+    ++third line, third line part 2

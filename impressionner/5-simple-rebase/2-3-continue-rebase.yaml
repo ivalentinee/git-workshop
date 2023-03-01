@@ -1,0 +1,24 @@
+title: |
+  Continue rebase
+description: |
+  Run `git add file1.txt` and `git rebase --continue`
+text: |
+  Add changes to git stage, run "git rebase --continue"
+hint: |
+  git add file1.txt
+  git rebase --continue
+result: |
+  Applying: another-branch: added "second line part 2"
+  Applying: another-branch: added "third line part 2"
+  Using index info to reconstruct a base tree...
+  M       file1.txt
+  Falling back to patching base and 3-way merge...
+  Auto-merging file1.txt
+  CONFLICT (content): Merge conflict in file1.txt
+  error: Failed to merge in the changes.
+  Patch failed at 0002 another-branch: added "third line part 2"
+  hint: Use 'git am --show-current-patch' to see the failed patch
+  Resolve all conflicts manually, mark them as resolved with
+  "git add/rm <conflicted_files>", then run "git rebase --continue".
+  You can instead skip this commit: run "git rebase --skip".
+  To abort and get back to the state before "git rebase", run "git rebase --abort".

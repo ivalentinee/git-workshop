@@ -1,0 +1,9 @@
+title: Get default username
+description: |
+  Try getting default user name by running
+    `git config --global --get user.name`
+    (spoiler: it's empty)
+text: |
+  Use command 'git config --global --get user.name'
+result: |
+  Empty output

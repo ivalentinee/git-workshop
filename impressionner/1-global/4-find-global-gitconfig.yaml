@@ -1,0 +1,7 @@
+title: Find global gitconfig
+description: |
+  Find global gitconfig in $HOME/.gitconfig
+text: |
+  Find global gitconfig in $HOME/.gitconfig
+result: |
+  user.name and user.email are already set

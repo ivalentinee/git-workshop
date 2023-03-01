@@ -1,0 +1,12 @@
+title: |
+  Merge "master"
+description: |
+  Merge `master` into `another-branch-merge-copy` by running `git merge master`
+text: |
+  Merge "master" into "another-branch-merge-copy" by running "git merge <branch-to-merge>"
+hint: |
+  git merge master
+result: |
+  Auto-merging file1.txt
+  CONFLICT (content): Merge conflict in file1.txt
+  Automatic merge failed; fix conflicts and then commit the result.

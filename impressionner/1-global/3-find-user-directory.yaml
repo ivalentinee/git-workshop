@@ -1,0 +1,8 @@
+title: Find user directory
+description: |
+  Find user directory
+text: |
+  Find user directory.
+    Linux: `/home/<username>/` or `$HOME`
+    MacOS: `/home/<username>/` or `$HOME`
+    Windows: `C:\Users\<username>\`

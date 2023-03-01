@@ -1,0 +1,16 @@
+title: |
+  Add and commit third line
+description: |
+  Add another line of `third line` to `file1.txt`, commit it as `master: added "third line"`
+text: |
+  Add another line of "third line" to "file1.txt", add and commit it as 'master: added "third line"'
+hint: |
+  echo "third line" >> file1.txt
+  git add file1.txt
+  git commit -m 'master: added "third line"'
+result: |
+  git l:
+    (HEAD -> master) master: added "third line"
+    master: added "second line"
+    (another-branch) add file2.txt
+    add file1.txt

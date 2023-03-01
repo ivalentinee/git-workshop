@@ -1,0 +1,13 @@
+title: |
+  Reset "another-branch-rebase-copy" to "another-bransh"
+description: |
+  Reset `another-branch-rebase-copy` to `another-branch` with `git checkout another-branch-rebase-copy` and `git reset --hard another-branch`
+text: |
+  Have a look at latest commit in "another-branch-rebase-copy" with "git branch -v -l <branch>"
+  Reset "another-branch-rebase-copy" to "another-branch" with "git checkout" and "git reset --hard"
+hint: |
+  git checkout another-branch-rebase-copy
+  git reset --hard another-branch
+result: |
+  git branch -v -l:
+    * another-branch-rebase-copy 799485a another-branch: added "third line part 2"
